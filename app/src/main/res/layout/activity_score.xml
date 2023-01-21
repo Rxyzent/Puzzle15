@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity"
+    android:background="@drawable/game_backgraund">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/Gloria_font"
+            android:text="High Score"
+            android:textSize="55sp"/>
+       <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/score_text_backgraund"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="puzzle3x3"
+                    android:background="@drawable/score_text_backgraund"
+                    android:textSize="25sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:background="@drawable/score_text_backgraund"
+                    android:text="puzzle4x4"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="time"
+                    android:background="@drawable/score_text_backgraund"
+                    android:textSize="35sp"/>
+                <TextView
+                    android:id="@+id/score_time_3x3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:text="00:00"
+                    android:background="@drawable/score_text_backgraund"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/score_time_4x4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:text="00:00"
+                    android:background="@drawable/score_text_backgraund"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/score_text_backgraund"
+                        android:textSize="35sp"
+                        android:text="moves"/>
+
+                    <TextView
+                        android:id="@+id/score_moves_3x3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:background="@drawable/score_text_backgraund"
+                        android:textSize="35sp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/score_moves_4x4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:background="@drawable/score_text_backgraund"
+                        android:textSize="35sp"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:background="@drawable/ic_baseline_person_pin_24"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="22sp"
+                style="@style/Coligraph_font"
+                android:textColor="@color/white"
+                android:text="Date"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="22sp"
+                style="@style/Coligraph_font"
+                android:textColor="@color/white"
+                android:text="Time"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="22sp"
+                style="@style/Coligraph_font"
+                android:textColor="@color/white"
+                android:text="Moves"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/record_layout"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_main_menu"
+                android:layout_width="200dp"
+                android:layout_height="65dp"
+                android:background="@drawable/empty_button_backgraund"
+                android:textSize="20sp"
+                style="@style/Gloria_font"
+                android:text="main menu"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

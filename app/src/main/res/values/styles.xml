@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="GameButtonStyle" parent="Coligraph_font">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/fill_button_backgraund</item>
+    </style>
+    <style name="Gloria_font">
+        <item name="fontFamily">@font/gloria</item>
+    </style>
+    <style name="Coligraph_font">
+        <item  name="fontFamily">@font/calligraf</item>
+    </style>
+</resources>

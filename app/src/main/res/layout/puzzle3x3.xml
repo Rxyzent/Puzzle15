@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_backgraund"
+    tools:context=".Game3x3">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Gloria_font"
+            android:text="15 PUZZLE"
+            android:textSize="45sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/new_game"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_weight="5"
+            style="@style/Gloria_font"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/other_buttons_back"
+            android:text="new game"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="3"
+            android:background="@drawable/other_buttons_back"
+            android:gravity="center"
+            android:text="time:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/move"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="moves:"
+            android:background="@drawable/other_buttons_back"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/GameButtonStyle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:tag="0:0"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/GameButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@+id/btn1"
+            android:tag="0:1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/GameButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/btn2"
+            android:tag="0:2"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/GameButtonStyle"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/btn1"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:tag="1:0"
+            android:text="4" />
+        <Button
+            android:id="@+id/btn5"
+            android:tag="1:1"
+            android:text="5"
+            android:layout_marginEnd="6dp"
+            android:layout_below="@id/btn1"
+            android:layout_toEndOf="@id/btn4"
+            style="@style/GameButtonStyle" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/GameButtonStyle"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/btn1"
+            android:layout_toEndOf="@id/btn5"
+            android:tag="1:2"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/GameButtonStyle"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/btn4"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="6dp"
+            android:tag="2:0"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/GameButtonStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/btn4"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/btn7"
+            android:tag="2:1"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/GameButtonStyle"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/btn4"
+            android:layout_toEndOf="@id/btn8"
+            android:background="@drawable/empty_button_backgraund"
+            android:tag="2:2"
+            android:text="" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="150dp"
+        style="@style/Gloria_font"
+        android:background="@drawable/other_buttons_back"
+        android:text="start"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#A498BE"
+        style="@style/Coligraph_font"
+        android:text="Sonlarni harakatlantirish uchun ustidan bosing"
+        />
+
+</FrameLayout>

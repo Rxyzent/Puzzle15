@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_backgraund">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        style="@style/Gloria_font"
+        android:textSize="65sp"
+        android:text="Main menu"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_3x3"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            style="@style/Coligraph_font"
+            android:background="@drawable/empty_button_backgraund"
+            android:text="3x3 puzzle"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_4x4"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            style="@style/Coligraph_font"
+            android:background="@drawable/empty_button_backgraund"
+            android:text="4x4 puzzle"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_score"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            style="@style/Coligraph_font"
+            android:background="@drawable/empty_button_backgraund"
+            android:text="max score"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            style="@style/Coligraph_font"
+            android:background="@drawable/empty_button_backgraund"
+            android:text="settings"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            style="@style/Coligraph_font"
+            android:background="@drawable/empty_button_backgraund"
+            android:text="exit"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+</FrameLayout>
